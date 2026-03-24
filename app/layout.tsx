@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'CareerCompass - AI-Powered Career Guidance',
+  description: 'Discover your ideal career path with AI-powered psychometric assessments, personalized guidance, and interactive career roadmaps.',
   generator: 'v0.app',
   icons: {
     icon: [
