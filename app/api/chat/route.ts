@@ -1,4 +1,5 @@
 import { streamText, convertToModelMessages } from "ai"
+import { google } from "@ai-sdk/google"
 
 export async function POST(req: Request) {
   const { messages, userProfile, assessmentResults } = await req.json()
@@ -55,7 +56,7 @@ Use this assessment data to provide personalized career recommendations and insi
   }
 
   const result = streamText({
-    model: "anthropic/claude-sonnet-4-20250514",
+    model: google("gemini-2.0-flash"),
     system: systemContext,
     messages: await convertToModelMessages(messages),
   })
