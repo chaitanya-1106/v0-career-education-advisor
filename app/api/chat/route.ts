@@ -1,4 +1,5 @@
 import { streamText, convertToModelMessages } from "ai"
+import { google } from "@ai-sdk/google"
 
 export async function POST(req: Request) {
   const { messages, userProfile, assessmentResults } = await req.json()
